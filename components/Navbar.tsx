@@ -1,7 +1,6 @@
 import { Box } from "lucide-react"
 import Button from "./ui/Button"
 import { useOutletContext } from "react-router"
-import { console } from "inspector"
 
 const Navbar = () => {
     const { isSignedIn, username, signIn, signOut } = useOutletContext<AuthContext>()
@@ -80,7 +79,7 @@ const Navbar = () => {
                             </Button>
                             <a
                                 className="cta"
-                                href="/"
+                                href="#upload"
                                 >
                                 Get started
                             </a>
